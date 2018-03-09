@@ -4,12 +4,12 @@
 // Make sure to look at hello-world.spec.js--that should give you some hints about what is
 // expected here.
 
-var HelloWorld = function () {};
+var HelloWorld = function() {};
 
-HelloWorld.prototype.hello = function () {
-//
-// YOUR CODE GOES HERE
-//
+HelloWorld.prototype.hello = function() {
+  //
+  return "Hello, World!";
+  //
 };
 
 module.exports = HelloWorld;
