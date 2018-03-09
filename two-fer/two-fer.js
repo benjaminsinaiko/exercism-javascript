@@ -1,11 +1,10 @@
 var TwoFer = function() {};
 
 TwoFer.prototype.twoFer = function(who) {
-  var name = who;
-  if (name === null) {
-    return "One for you, one for me.";
+  if (who) {
+    return "One for " + who + ", one for me.";
   } else {
-    return "Hello";
+    return "One for you, one for me.";
   }
 };
 
