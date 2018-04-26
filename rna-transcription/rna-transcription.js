@@ -9,8 +9,13 @@ var DnaTranscriber = function() {
 
 DnaTranscriber.prototype.toRna = function(dna) {
   var letters = dna.split("");
+  var that = this;
+  letters.forEach(function(letter) {
+    if (that.dnaToRna.hasOwnProperty(letter) === false) {
+      throw new Error("Invalid input");
+    }
+  });
   return letters.map(letter => this.dnaToRna[letter]).join("");
-  // return this.dnaToRna[dna];
 };
 
 module.exports = DnaTranscriber;
